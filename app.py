@@ -6,7 +6,7 @@ import numpy as np
 import sklearn
 
 app = Flask(__name__)
-server=app.server
+
 model = pickle.load(open("df.pkl", 'rb'))
 
 @app.route('/',methods=['GET'])
